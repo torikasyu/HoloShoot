@@ -15,12 +15,15 @@ public class GameManager : MonoBehaviour, IInputClickHandler {
 
         //throw new NotImplementedException();
 
-        //Vector3 shootDir = myCamera.transform.forward.normalized;
-        Vector3 shootDir = transform.forward;
+		Camera myCamera = GetComponent<Camera> ();
+        Vector3 shootDir = myCamera.transform.forward.normalized;
+		print (shootDir.x.ToString () + ":" + shootDir.y.ToString () + ":" + shootDir.z.ToString ());
+        //Vector3 shootDir = transform.forward;
 
         GameObject bullet = Instantiate(this.bulletPrefab);
+		bullet.transform.position = new Vector3 (myCamera.transform.position.x, myCamera.transform.position.y + 0.5f, myCamera.transform.position.z);
         Rigidbody rid = bullet.GetComponent<Rigidbody>();
-        rid.AddForce(shootDir * 100.0f);
+        rid.AddForce(shootDir * 500.0f);
 
     }
 

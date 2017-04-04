@@ -393,11 +393,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: HoloShoot
   metroPackageVersion: 
-  metroCertificatePath: 
+  metroCertificatePath: C:\Users\tanaka\Documents\HoloShoot\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 005a5dde31ccd301
   metroApplicationDescription: HoloShoot
   wsaImages: {}
   metroTileShortName: 
